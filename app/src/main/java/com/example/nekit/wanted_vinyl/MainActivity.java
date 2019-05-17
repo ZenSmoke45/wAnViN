@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btFindThat = (Button) findViewById(R.id.FindThat);
-        etFind = (EditText) findViewById(R.id.Find);
-        tvWAYLF = (TextView) findViewById(R.id.WAYLF);
+        btFindThat = findViewById(R.id.FindThat);
+        etFind = findViewById(R.id.Find);
+        tvWAYLF = findViewById(R.id.WAYLF);
         Check();
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
