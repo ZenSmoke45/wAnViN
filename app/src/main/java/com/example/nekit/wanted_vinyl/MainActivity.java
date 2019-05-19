@@ -35,7 +35,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     Map<String, LatLng> places = new Place();
     private SearchView loc;
     private SupportMapFragment mapFragment;
-    private String a, answerHTTP;
     private Gson gson = new GsonBuilder().create();
     private final String server = "https://www.google.com/";
     private Retrofit wantedvinyl = new Retrofit
